@@ -1,0 +1,14 @@
+<%= form_with model: @tarea, local: true do |f| %>
+
+    <%= f.label :title, "Descripcion de todo" %>
+    <%= f.text_field :description %>
+    <div>
+    <%= f.label :content, "Completed" %>
+    <%= f.check_box :completed?%>
+    </div>
+
+    <%= f.submit "Enviar", class:'btn btn-success' %>
+
+
+
+    <% end %>

@@ -1,0 +1,30 @@
+
+<div class="container"> <!--  evitamos que toque los bordes -->
+
+  <div class="row">  <!--  generamos columnas  -->
+
+
+    <% @tareas.each_slice(4) do |row| %>  <!--  hacemos que se agupen de 4 item -->
+    <% row.each do |tarea| %> <!--  iteramos los item de 4  -->
+    <div class="col">
+
+      <div class="card"> <!--  formatea cad item como una tarjeta -->
+
+        <%= image_tag tarea.photo, class: 'card-img-top' %> <!--la foto encabea la  tarjeta o card-->
+        <div class="body"> <!--se especifica el body de la tarjeta o card-->
+        <h5> <%= tarea.name %> </h5>
+
+
+    </div>
+
+    </div>
+
+  </div>
+
+  <% end  %>
+  <dir class="w-100"> </dir>
+  <% end  %>
+
+  </div>
+
+  </div>
