@@ -10,6 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 
 gem 'devise', git: 'http://github.com/plataformatec/devise.git'
+
 gem 'faker'
 
 gem 'puma', '~> 3.11'

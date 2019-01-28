@@ -2,5 +2,5 @@
     <a class="flex-sm-fill text-sm-center nav-link active" <%= link_to " Tareas", tareas_path%>
     <a class="flex-sm-fill text-sm-center nav-link" <%= link_to " Tareas Status", makes_path%>
     <a class="flex-sm-fill text-sm-center nav-link"  <%= link_to " logout", destroy_user_session_path, method: :delete %>
-    <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    <a class="flex-sm-fill text-sm-center nav-link"  <%= link_to " Usuarios", users_index_path, method: :get%>
   </nav>

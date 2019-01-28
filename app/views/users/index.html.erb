@@ -1,0 +1,30 @@
+<h1>Users#index</h1>
+
+<%= @users.each do |usuarios| %>
+
+<div class="well">
+  <div class="container">
+      <div class="row">
+
+
+    <div class="col-sm-6">
+        <h5><strong>ID</strong></h5>
+        <%= usuarios.email %> </div>
+
+        <div class="col-sm-6">
+            <h5><strong>Tarea realizada</strong></h5>
+            <%= usuarios.tareas %> </div>
+
+  </div>
+</div>
+</div>
+
+
+
+
+<% end %>
+
+
+
+
+<p>Find me in app/views/users/index.html.erb</p>
