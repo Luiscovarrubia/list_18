@@ -1,0 +1,28 @@
+<table class="table">
+
+  <%= @makes.each do |hechos| %>
+
+
+    <% if hechos.state == true %>
+
+    <div class="well">
+        <div class="container">
+            <div class="row">
+
+
+          <div class="col-sm-6">
+              <h5><strong>ID</strong></h5>
+              <%=  hechos.tarea_id    %> </div>
+
+              <div class="col-sm-6">
+                  <h5><strong>Tarea realizada</strong></h5>
+                  <%= hechos.state %> </div>
+
+        </div>
+      </div>
+    </div>
+
+<% end %>
+
+<% end %>
+</table>

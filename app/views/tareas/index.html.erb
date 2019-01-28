@@ -1,5 +1,6 @@
 
-<div class="container"> <!--  evitamos que toque los bordes -->
+
+<div class="container" > <!--  evitamos que toque los bordes -->
 
   <div class="row">  <!--  generamos columnas  -->
 
@@ -13,6 +14,8 @@
         <%= image_tag tarea.photo, class: 'card-img-top' %> <!--la foto encabea la  tarjeta o card-->
         <div class="body"> <!--se especifica el body de la tarjeta o card-->
         <h5> <%= tarea.name %> </h5>
+        <h5> Id <%= tarea.id %> </h5>
+        <h5><%= link_to "Hacer", tarea_makes_path(tarea), class: 'btn btn-success', method: :post %> </h5>
 
 
     </div>
